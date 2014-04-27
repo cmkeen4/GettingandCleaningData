@@ -1,4 +1,4 @@
-## This is CodeBook is a brief explanation of the processes and assumptions made by Chris Keen to meet the requirements of Peer Assessment assignment in the Coursera class, Getting and Cleaning Data.
+#### This is CodeBook is a brief explanation of the processes and assumptions made by Chris Keen to meet the requirements of Peer Assessment assignment in the Coursera class, Getting and Cleaning Data.
 
 Source of data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -18,7 +18,7 @@ Two folders, ‘test’ and ‘train’, with the subjects data sets.
 
 -‘subject_train.txt’: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
 
-# Read the text files into my environment
+##### Read the text files into my environment
 
 -subTest <- read.table("~/UCI HAR Dataset/test/subject_test.txt", quote="\"")
 
@@ -37,7 +37,7 @@ Two folders, ‘test’ and ‘train’, with the subjects data sets.
 
 -features <- read.table("~/UCI HAR Dataset/features.txt", quote="\"")
 
-# The tables created had the following data
+##### The tables created had the following data
 
 -subTest:  2,947 objects of 1 variable - int 
 
@@ -55,7 +55,7 @@ Two folders, ‘test’ and ‘train’, with the subjects data sets.
 
 -features:  561 objects of 2 variables -  int, Factor w/ 477 levels
 
-## My assumptions for binding, labeling and merging data tables.
+##### My assumptions for binding, labeling and merging data tables.
 
 I used rbind to create three (3) data tables from six(6):
 
