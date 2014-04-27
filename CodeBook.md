@@ -65,8 +65,8 @@ I used rbind to create three (3) data tables from six(6):
 
 -Y (uppercase Y):  10299 objects of 1 variable; holds data from both yTest and yTrain
 
-LABELING 
- I labeled each column of the data tables
+###### LABELING 
+I labeled each column of the data tables
 
 -‘subjects’ has one column labeled “Subjects”
 
