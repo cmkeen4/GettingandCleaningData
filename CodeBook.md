@@ -19,29 +19,29 @@ Two folders, ‘test’ and ‘train’, with the subjects data sets.
 
 # Read the text files into my environment
 
-subTest <- read.table("~/UCI HAR Dataset/test/subject_test.txt", quote="\"")
-xTest <- read.table("~/UCI HAR Dataset/test/X_test.txt", quote="\"")
-yTest <- read.table("~/UCI HAR Dataset/test/y_test.txt", quote="\"")
+*subTest <- read.table("~/UCI HAR Dataset/test/subject_test.txt", quote="\"")
+*xTest <- read.table("~/UCI HAR Dataset/test/X_test.txt", quote="\"")
+*yTest <- read.table("~/UCI HAR Dataset/test/y_test.txt", quote="\"")
 
-subTrain <- read.table("~/UCI HAR Dataset/train/subject_train.txt", quote="\"")
-xTrain <- read.table("~/UCI HAR Dataset/train/X_train.txt", quote="\"")
-yTrain <- read.table("~/UCI HAR Dataset/train/y_train.txt", quote="\"")
+*subTrain <- read.table("~/UCI HAR Dataset/train/subject_train.txt", quote="\"")
+*xTrain <- read.table("~/UCI HAR Dataset/train/X_train.txt", quote="\"")
+*yTrain <- read.table("~/UCI HAR Dataset/train/y_train.txt", quote="\"")
 
-actLabels <- read.table("~/UCI HAR Dataset/activity_labels.txt", quote="\"")
-features <- read.table("~/UCI HAR Dataset/features.txt", quote="\"")
+*actLabels <- read.table("~/UCI HAR Dataset/activity_labels.txt", quote="\"")
+*features <- read.table("~/UCI HAR Dataset/features.txt", quote="\"")
 
 # The tables created had the following data
 
-subTest:  2,947 objects of 1 variable - int 
-xTest:  2,947 objects of 561 variables - all num
-yTest:  2,947 objects of 1 variable - int
+*subTest:  2,947 objects of 1 variable - int 
+*xTest:  2,947 objects of 561 variables - all num
+*yTest:  2,947 objects of 1 variable - int
 
-subTrain:  7,352 objects of 1 variable - int
-xTrain:  7,352 objects of 561 variable – all num
-yTrain:  7,352 objects of 1 variable - int
+*subTrain:  7,352 objects of 1 variable - int
+*xTrain:  7,352 objects of 561 variable – all num
+*yTrain:  7,352 objects of 1 variable - int
 
-actLabels:  6 objects of 2 variables – int, Factor w/ 6 levels
-features:  561 objects of 2 variables -  int, Factor w/ 477 levels
+*actLabels:  6 objects of 2 variables – int, Factor w/ 6 levels
+*features:  561 objects of 2 variables -  int, Factor w/ 477 levels
 
 ## My assumptions for binding, labeling and merging data tables.
 
