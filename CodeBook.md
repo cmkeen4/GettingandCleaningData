@@ -47,20 +47,20 @@ features:  561 objects of 2 variables -  int, Factor w/ 477 levels
 
 I used rbind to create three (3) data tables from six(6):
 
-•	subjects:
-o	‘subjects’ – holds data from both subTest and subTrain 
-•	X (uppercase X)
-o	‘X’ – holds data from both xTest and xTrain
-•	Y (uppercase Y)
-o	‘Y’ – holds data from both yTest and yTrain
+*subjects:  10299 objects of 1 variable
+	*‘subjects’ – holds data from both subTest and subTrain 
+*X (uppercase X):  10299 objects of 561 variable
+	*‘X’ – holds data from both xTest and xTrain
+*Y (uppercase Y):  10299 objects of 1 variable
+	*‘Y’ – holds data from both yTest and yTrain
 
 LABELING 
  I labeled each column of the data tables
 
-•	‘subjects’ has one column labeled “Subjects”
-•	‘X’ has 561 columns which I labeled using the 2nd column of the ‘features’ table.  
-o	The second column in the ‘features’ table was 561 rows of measurement names.  I made the assumption they corresponded to the 561 columns of data in X table.
-•	‘Y’ has one column labeled “Activity”
+*‘subjects’ has one column labeled “Subjects”
+*‘X’ has 561 columns which I labeled using the 2nd column of the ‘features’ table.  
+	*The second column in the ‘features’ table was 561 rows of measurement names.  I made the assumption they corresponded to the 561 columns of data in X table.
+*‘Y’ has one column labeled “Activity”
 
 I converted the data in ‘Y’ from ‘int’ (1-6) to ‘chr’ based on the ‘actLabels’ table.
 
@@ -73,18 +73,18 @@ I converted the data in ‘Y’ from ‘int’ (1-6) to ‘chr’ based on the �
 
 To extract only the measurements on the mean and standard deviation.  I used the ‘grep’ command to find the columns with either  ‘mean’ or ‘std’ (standard deviation) in the column name.  Using those columns to create a subset of ‘X’ data table.
 
-•	subX (uppercase X):  10299 objects of 79 variables.
-o	‘subX’ is the result of subset of ‘X’ using cbind of all columns whose name has the word ‘mean’ or  ‘std’ .
+*subX (uppercase X):  10299 objects of 79 variables.
+	*‘subX’ is the result of subset of ‘X’ using cbind of all columns whose name has the word ‘mean’ or  ‘std’ .
 
 With all three (3) data tables (‘subjects’, ‘Y’, ‘subX’) labeled and trimmed down to the ‘mean’ and ‘std’ columns, I used the ‘cbind’ to create one data set called ‘myData’.
 
-•	myData:  10299 objects of 81 variables.
-o	‘myData’ is the result of column binding the data in this order; ‘subjects’, ‘Y’, ‘subX’, which states the number of the subject (1-30), the activity they were doing followed by the measurements.
+*myData:  10299 objects of 81 variables.
+	*‘myData’ is the result of column binding the data in this order; ‘subjects’, ‘Y’, ‘subX’, which states the number of the subject (1-30), the activity they were doing followed by the measurements.
 
 Created a second data set from ‘myData’ with the average of each variable for each activity and subject.
 
-•	avgData:  135 objects of 81 variables.
-o	The objects were put in order based on the “Subjects” id (1-30).
+*avgData:  135 objects of 81 variables.
+	*The objects were put in order based on the “Subjects” id (1-30).
 
 Final step was to write the table to a text file.  
 
